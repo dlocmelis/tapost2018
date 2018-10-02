@@ -1,9 +1,9 @@
 test: set
 name: Smoke
-description: Smoke test for StoreAPI
+description: CRUD functionality test
 cases:
 - bananas CRUD json
-- boxes CRUD json
 - calls CRUD json
+- boxes CRUD json
 - oranges CRUD json
 parallel: false

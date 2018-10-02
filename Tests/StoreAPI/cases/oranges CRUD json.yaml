@@ -3,10 +3,10 @@ name: oranges CRUD json
 description: <insert description of test case>
 casedetails:
   vars:
-    $color: $genString(9)
-    $diameter: $genInteger(41,158)
+    $color: $genString(5)
+    $diameter: $genInteger(73,411)
     $id: $genString(9)
-    $name: $genString(6)
+    $name: $genString(7)
   defaultCollection: StoreAPI
   steps:
   - name: createOrange json

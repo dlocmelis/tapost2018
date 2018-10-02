@@ -3,14 +3,14 @@ name: boxes CRUD json
 description: <insert description of test case>
 casedetails:
   vars:
-    $appleId: $genString(7)
-    $boxId: $genString(7)
-    $capactiy: $genString(6)
-    $color: $genString(8)
-    $deliveryAddress: $genString(8)
-    $email: $genString(9)
-    $name: $genString(7)
-    $weight: $genInteger(44,752)
+    $appleId: $genString(8)
+    $boxId: $genString(8)
+    $capactiy: $genString(5)
+    $color: $genString(9)
+    $deliveryAddress: $genString(5)
+    $email: $genString(6)
+    $name: $genString(5)
+    $weight: $genInteger(48,261)
   defaultCollection: StoreAPI
   steps:
   - name: createBox json
