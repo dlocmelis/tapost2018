@@ -1,0 +1,79 @@
+2018/10/02 19:23:37.259749 Port 9675 is busy
+2018/10/02 19:23:37.260136 Port 9676 is busy
+2018/10/02 19:23:37.260253 Port 9677 is open, taking it
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /execute                  --> main.(*testWorker).(main.execute)-fm (3 handlers)
+[GIN-debug] POST   /appendChunk              --> main.(*testWorker).(main.appendChunk)-fm (3 handlers)
+[GIN-debug] GET    /limit                    --> main.(*testWorker).(main.getLimit)-fm (3 handlers)
+[GIN-debug] GET    /status                   --> main.(*testWorker).(main.status)-fm (3 handlers)
+[GIN-debug] GET    /reset                    --> main.(*testWorker).(main.resetSend)-fm (3 handlers)
+[GIN-debug] POST   /setID/:workerID          --> main.(*testWorker).(main.receiveID)-fm (3 handlers)
+[GIN-debug] GET    /debug/pprof/             --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
+[GIN-debug] GET    /debug/pprof/cmdline      --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
+[GIN-debug] GET    /debug/pprof/profile      --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
+[GIN-debug] POST   /debug/pprof/symbol       --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
+[GIN-debug] GET    /debug/pprof/symbol       --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
+[GIN-debug] GET    /debug/pprof/trace        --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
+[GIN-debug] GET    /debug/pprof/block        --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
+[GIN-debug] GET    /debug/pprof/goroutine    --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
+[GIN-debug] GET    /debug/pprof/heap         --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
+[GIN-debug] GET    /debug/pprof/mutex        --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
+[GIN-debug] GET    /debug/pprof/threadcreate --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
+2018/10/02 19:23:37.260598 Registering worker: /register/worker/83ed2252-c65f-11e8-a757-6a00020ac460/9677 with access token: NWJiMzliMGYtMTIyYS1iMGIwLTNhMjQtZmM5Zi01NGIxMzVmZTozYTllMzY0MC1jNjVmLTExZTgtOGJjZC01ZDNlMmQ1ZDc1NTQ=
+2018/10/02 19:23:37.260631 Connecting to wss://apimation.com:9000/register/worker/83ed2252-c65f-11e8-a757-6a00020ac460/9677
+2018/10/02 19:23:37.665225 Response status: 101 Switching Protocols
+2018/10/02 19:23:37.665327 Registration ended
+2018/10/02 19:23:37.665411 PING ON
+2018/10/02 19:23:37.665502 Command has been received:  2
+2018/10/02 19:23:37.665545 Running matching command: worker.sendLimit
+2018/10/02 19:23:37.665568 Sending back worker limit through websocket
+2018/10/02 19:23:37.665721 Worker limit sent
+2018/10/02 19:23:37.700880 Command has been received:  1
+2018/10/02 19:23:37.700944 Running matching command: worker.setID with id: 8425a32b-c65f-11e8-aa65-42010af01a41
+2018/10/02 19:23:37.865948 Command has been received:  0
+2018/10/02 19:23:37.866005 Running matching command: worker.sendStatus
+2018/10/02 19:23:37.866034 Sending back worker status through websocket
+2018/10/02 19:23:37.866109 Status sent
+2018/10/02 19:23:37.866148 Signal to stop ping received
+2018/10/02 19:23:37.866166 PING OFF
+2018/10/02 19:23:37.976308 Command has been received:  3
+2018/10/02 19:23:37.976366 Running matching command: worker.execute
+2018/10/02 19:23:37.977905 Prepping suite-test test worker execution at 2018-10-02 19:23:37.977858372 +0300 EEST m=+0.725218883
+2018/10/02 19:23:37.977937 Job request ID: 844a6577-c65f-11e8-b2a2-42010af01a41, job count: 4
+2018/10/02 19:23:37.978830 Preparing generic test case, bananas CRUD json
+2018/10/02 19:23:37.981684 Preparing generic test case, boxes CRUD json
+2018/10/02 19:23:38.000260 Preparing generic test case, calls CRUD json
+2018/10/02 19:23:38.014231 Preparing generic test case, oranges CRUD json
+2018/10/02 19:23:38.015081 Job preps done 4 matches total count: 4
+2018/10/02 19:23:38.015098 Prep done, launching
+2018/10/02 19:23:38.015143 Launching suite-test test worker execution at 2018-10-02 19:23:38.015119996 +0300 EEST m=+0.762481597
+2018/10/02 19:23:39.061531 Sending set results update to TEM remotely for case 8435685b-c65f-11e8-a757-6a00020ac460 in jobrequest 844a6577-c65f-11e8-b2a2-42010af01a41
+2018/10/02 19:23:39.061605 Cases done: 1, cases total: 4
+2018/10/02 19:23:39.061627 Percent done 25
+2018/10/02 19:23:39.129298 Sending set status update to TE master remotely for set 8434ed2f-c65f-11e8-a757-6a00020ac460 in jobrequest 844a6577-c65f-11e8-b2a2-42010af01a41
+2018/10/02 19:23:40.856546 Sending set results update to TEM remotely for case 8435e5cc-c65f-11e8-a757-6a00020ac460 in jobrequest 844a6577-c65f-11e8-b2a2-42010af01a41
+2018/10/02 19:23:40.856610 Cases done: 2, cases total: 4
+2018/10/02 19:23:40.856629 Percent done 50
+2018/10/02 19:23:40.921253 Sending set status update to TE master remotely for set 8434ed2f-c65f-11e8-a757-6a00020ac460 in jobrequest 844a6577-c65f-11e8-b2a2-42010af01a41
+2018/10/02 19:23:41.779745 Sending set results update to TEM remotely for case 84362d80-c65f-11e8-a757-6a00020ac460 in jobrequest 844a6577-c65f-11e8-b2a2-42010af01a41
+2018/10/02 19:23:41.779810 Cases done: 3, cases total: 4
+2018/10/02 19:23:41.779826 Percent done 75
+2018/10/02 19:23:41.845373 Sending set status update to TE master remotely for set 8434ed2f-c65f-11e8-a757-6a00020ac460 in jobrequest 844a6577-c65f-11e8-b2a2-42010af01a41
+2018/10/02 19:23:42.705391 Sending set results update to TEM remotely for case 84366930-c65f-11e8-a757-6a00020ac460 in jobrequest 844a6577-c65f-11e8-b2a2-42010af01a41
+2018/10/02 19:23:42.705447 Cases done: 4, cases total: 4
+2018/10/02 19:23:42.705468 Percent done 100
+2018/10/02 19:23:42.770878 Sending set status update to TE master remotely for set 8434ed2f-c65f-11e8-a757-6a00020ac460 in jobrequest 844a6577-c65f-11e8-b2a2-42010af01a41
+2018/10/02 19:23:42.771050 Perf results: {Latencies:{Total:4.013353175s Mean:200.667658ms P50:200.088732ms P95:202.962535ms P99:202.962535ms Max:203.343147ms} BytesIn:{Total:2202 Mean:110.1} BytesOut:{Total:1308 Mean:65.4} Earliest:2018-10-02 19:23:38.01536752 +0300 EEST m=+0.762729128 Latest:2018-10-02 19:23:42.449415818 +0300 EEST m=+5.196907193 End:2018-10-02 19:23:42.64950455 +0300 EEST m=+5.396995925 Duration:4.434178065s Wait:200.088732ms Requests:20 Rate:4.510418775886484 Success:1 StatusCodes:map[204:5 201:5 200:10] Errors:[] errors:map[] success:20 latencies:0xc4201ea2d0}
+2018/10/02 19:23:42.771109 Cases done: 4, cases total: 4
+2018/10/02 19:23:42.771132 Percent done 100
+2018/10/02 19:23:42.833861 Sending set status update to TE master remotely for set 8434ed2f-c65f-11e8-a757-6a00020ac460 in jobrequest 844a6577-c65f-11e8-b2a2-42010af01a41
+2018/10/02 19:23:43.070190 Response status: 204 No Content
+2018/10/02 19:23:43.070249 Test Request: 844a6577-c65f-11e8-b2a2-42010af01a41 DONE, type: suite-test
+2018/10/02 19:23:43.070272 TEST DURATION:  5.055296988s
+2018/10/02 19:23:43.070286 Success!
+2018/10/02 19:23:43.070296 PING ON

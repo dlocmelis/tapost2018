@@ -1,0 +1,13 @@
+test: load
+name: calls CRUD json
+loadtype: simulation
+details:
+  testCase: calls CRUD json
+  users: 10
+  duration: 10s
+  distribution: random
+  environment: Staging
+  asserts:
+  - type: latency
+    metric: 99th
+    expected: 500ms
