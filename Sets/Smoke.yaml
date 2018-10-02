@@ -1,9 +1,0 @@
-test: set
-name: Smoke
-description: CRUD functionality test
-cases:
-- bananas CRUD json
-- calls CRUD json
-- boxes CRUD json
-- oranges CRUD json
-parallel: false
