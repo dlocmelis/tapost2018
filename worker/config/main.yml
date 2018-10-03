@@ -1,0 +1,10 @@
+connection:
+  access_token: NWJiNDliMWItZWYxNy04NzJhLWJmOTMtZjVjNS1jY2RlODFkOTozNWExZDQ2MC1jNmY3LTExZTgtOGJjZC01ZDNlMmQ1ZDc1NTQ=
+  master_host: apimation.com:9000
+worker:
+  type: loc
+  port: 9675
+  job_limit: 200
+  debug: false
+  dev: false
+  log_path: /Users/dlocmelis/prezentacijas/tapost2018/worker/logs/worker
