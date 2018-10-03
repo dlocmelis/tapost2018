@@ -1,0 +1,17 @@
+test: case
+name: calls CRUD json
+description: <insert description of test case>
+casedetails:
+  vars:
+    $description: $genString(6)
+    $destination: $genString(8)
+    $id: $genString(7)
+    $name: $genString(8)
+    $source: $genString(7)
+    $url: $genString(5)
+  defaultCollection: StoreAPI
+  steps:
+  - name: createCall json
+  - name: getCall json
+  - name: updateCall json
+  - name: deleteCall json
